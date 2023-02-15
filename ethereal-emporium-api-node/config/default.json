@@ -1,4 +1,0 @@
-{
-  "jwtPrivateKey": "mySecureKey",
-  "db": "mongodb+srv://admin:admin@cluster0.amghmo9.mongodb.net/?retryWrites=true&w=majority"
-}
