@@ -15,9 +15,9 @@ mongoose
 
 app.use(express.json());
 
-app.use("/", (req, res) => {
-  res.json("Ethereal Emporium is Live");
-});
+// app.use("/", (req, res) => {
+//   res.json("Ethereal Emporium is Live");
+// });
 
 app.use("/api/users", users);
 app.use("/api/auth", auth);
