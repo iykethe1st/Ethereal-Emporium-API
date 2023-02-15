@@ -9,6 +9,7 @@ const { logger } = require("./logger");
 mongoose
   .connect(
     "mongodb+srv://admin:admin@cluster0.amghmo9.mongodb.net/?retryWrites=true&w=majority"
+    // "mongodb://localhost/ethereal-emporium"
   )
   .then(() => console.log("Connected to MongoB..."))
   .catch((err) => console.error("Could not connect to MongoDB...", err));
