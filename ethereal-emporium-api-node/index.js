@@ -16,9 +16,12 @@ mongoose
 
 app.use(express.json());
 
+app.use("/", () => {
+  res.send("Ethereal Emporium is Live");
+});
+
 app.use("/api/users", users);
 app.use("/api/auth", auth);
-app.use("/", index);
 
 app.listen(port, () => {
   logger.info(`Listening on port ${port}...`);
