@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const app = express();
 const mongoose = require("mongoose");
 const users = require("./routes/users");
@@ -8,7 +9,7 @@ const { logger } = require("./logger");
 
 mongoose
   .connect(
-    "mongodb+srv://admin:admin@cluster0.amghmo9.mongodb.net/?retryWrites=true&w=majority"
+    process.env.ETHEREAL_DB
     // "mongodb://localhost/ethereal-emporium"
   )
   .then(() => console.log("Connected to MongoB..."))
