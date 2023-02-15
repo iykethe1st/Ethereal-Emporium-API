@@ -24,3 +24,4 @@ app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 // export Ethereal_Emporium_Privatekey=mySecureKey
 // export Ethereal_Emporium_Cluster=
+module.exports = app;
